@@ -8,6 +8,7 @@ Une brique peut être créée dans un plugin ou un thème WordPress.
 Voici un exemple de code minimaliste pour la création d’une Brique via un plugin WordPress :
 
 ``/wp-content/plugins/mc_briques_exemple/mc_briques_exemple.php``
+
 .. code-block:: php
 	<?php
 	/**
@@ -34,6 +35,7 @@ Voici un exemple de code minimaliste pour la création d’une Brique via un plu
 		require_once(dirname(MCBRIQUES_EXEMPLE_PLUGIN_FILE).'/classes/MCBriquesExemple.php');
 		MCBriquesExemple::init();
 	}
+
 Si la classe principale du plugin n'existe pas alors on l'inclut puis on exécute la fonction init.
 
 
