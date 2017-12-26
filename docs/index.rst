@@ -25,3 +25,4 @@ Cette documentation est organiser en plusieurs sections :
    dev_briques
    dev_templates
    dev_notices
+   dev_paiement
