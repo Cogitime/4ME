@@ -115,3 +115,15 @@ Si le template est remplacé par un plugin (voir le chapitre précédent) alors 
 
 Ajouter un template de page
 ---------------------------
+
+La différence entre un simple template et un template de page est que ce dernier peut être configuré sur une page afin d'en remplacer son contenu. Le contenu de la page est alors remplacé par le contenu du template concerné via le filtre **the_content** de WordPress.
+
+Un template de page, contrairement à un simple template, doit être préalablement enregistré. Voici un exemple d'enregistrement d'un template de page :
+
+.. code-block:: php
+
+    $exemple = MCBriques::loadBrique('Exemple');
+    $exemple::registerPageTemplate('template.php', "Template d'exemple");
+
+.. note::
+    L'emplacement de ce template de page sera le suivant : ``/wp-content/plugins/mc_briques_exemple/templates/Exemple/Pages/template.php``
