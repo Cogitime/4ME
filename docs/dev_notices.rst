@@ -3,7 +3,7 @@ Système de notices
 
 Le système de notices est ajouté par la brique **Notice** présente dans le plugin principal.
 
-Les notices sont temporairement stockées dans la session de l'utilisateur avant d'être affichées (vous pouvons donc ajouter des notices puis réaliser une redirection sans perdre vos notices et sans ajouter de paramètres supplémentaires dans la redirection).
+Les notices sont temporairement stockées dans la session de l'utilisateur avant d'être affichées (vous pouvez donc ajouter des notices puis réaliser une redirection sans perdre vos notices et sans ajouter de paramètres supplémentaires dans la redirection).
 
 Utilisation classique
 ---------------------
