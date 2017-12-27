@@ -25,5 +25,6 @@ Cette documentation est organiser en plusieurs sections :
    dev_briques
    dev_templates
    dev_notices
+   dev_mail
    dev_paiement
    dev_cf
