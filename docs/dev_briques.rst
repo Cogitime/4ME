@@ -281,6 +281,7 @@ Voici un code d'exemple :
 
 .. code-block:: php
 
+    <?php
     $exemple = MCBriques::loadBrique('Exemple');
     if(current_user_can($exemple::READ_CAPABILITY)){
     	// L'utilisateur a le droit
