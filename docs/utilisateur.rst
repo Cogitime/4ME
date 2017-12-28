@@ -221,7 +221,7 @@ Il est possible d'insérer certaines valeurs liées à la commande via les codes
 
 Voici un exemple d'instructions pour le paiement par chèque :
 
-.. code-block: html
+.. code-block:: html
 
     Afin de régler votre commande, veuillez nous envoyer un chèque avec les informations suivantes :
     <ul>
