@@ -238,6 +238,56 @@ Voici un exemple d'utilisation :
 .. note::
     *La Brique "AutreBrique" n'existe pas par défaut, il s'agit simplement d'un exemple.*
 
+Gestion des droits d'accès des utilisateurs
+-------------------------------------------
+
+Le système de droits des utilisateurs utilise les "`Capabilities <https://codex.wordpress.org/Roles_and_Capabilities>`_" de WordPress.
+
+Ajouter un droit
+~~~~~~~~~~~~~~~~
+
+Voici un code d'exemple permettant d'ajouter un droit dans la Brique Exemple :
+
+.. code-block:: php
+
+    <?php
+    class MCBriqueExemple extends MCBrique
+    {
+    	const BRIQUE = 'Exemple';
+    	
+    	const READ_CAPABILITY = 'mcb_read_exemples';
+    	
+    	/**
+    	 * Initialisation de la brique Exemple
+    	 */
+    	public static function init(){
+    		static::registerCapabilities(array(
+    			static::READ_CAPABILITY => 'Intitulé du droit de lecture des exemples',
+    		));
+    	}
+    }
+
+.. note::
+    Dans cet exemple, la "capability" WordPress pour le droit **READ_CAPABILITY** de la brique Exemple est ``mcb_read_exemples``
+
+    L'ajout de ce droit permet de le rendre configurable dans l'interface de gestion des utilisateurs.
+
+Vérifier le droit de l'utilisateur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+La vérification du droit de l'utilisateur passe par la fonction WordPress `current_user_can <https://codex.wordpress.org/Function_Reference/current_user_can>`_.
+
+Voici un code d'exemple :
+
+.. code-block:: php
+
+    $exemple = MCBriques::loadBrique('Exemple');
+    if(current_user_can($exemple::READ_CAPABILITY)){
+    	// L'utilisateur a le droit
+    }else{
+    	// L'utilisateur n'a pas le droit
+    }
+
 Options paramétrables via une interface d'administration
 --------------------------------------------------------
 
