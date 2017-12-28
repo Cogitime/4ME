@@ -329,3 +329,14 @@ Signature du mail Texte
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Version Texte de la signature.
+
+Gestion des utilisateurs
+========================
+
+L'accès à la gestion des utilisateurs nécessite un compte administrateur. Il est cependant possible d'ouvrir l'accès à un autre utilisateur en lui attribuant le droit nécessaire.
+
+La gestion des utilisateurs permet d'accéder aux informations de base des utilisateurs ainsi qu'à leurs droits d'accès.
+
+Les droits d'accès sont ajoutés par les diverses briques installées sur votre site. Dans la majorité des cas il s'agit de droits d'administration.
+
+Il est ainsi facile de déléguer la gestion des utilisateurs sans lui donner les accès administrateur.
